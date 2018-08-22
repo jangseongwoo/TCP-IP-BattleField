@@ -17,9 +17,9 @@ TCP/IP 소켓 통신을 이용해 실시간 대전 격투 기반의 게임을 �
 
 - 게임 방식 : 플레이 그라운드 위에서 사용자의 캐릭터가 차례로 나오는 NPC를 처치하는 게임. 
 
-- 게임 목표 - 게임 내에 있는 NPC를 모두 다 처치하는 것.
+- 게임 목표 : 게임 내에 있는 NPC를 모두 다 처치하는 것.
 
-- 게임 구성 - 사용자 캐릭터 , NPC , 플레이 그라운드, 아이템 , 하늘 ,건물 ,문, 원형 경기장(문을 열고 들어가면 있음)
+- 게임 구성 : 사용자 캐릭터 , NPC , 플레이 그라운드, 아이템 , 하늘 ,건물 ,문, 원형 경기장(문을 열고 들어가면 있음)
 
 - 게임 기능 :  상,하,좌,우 이동, 점프 ,주먹 공격 ,발차기 공격, 아이템 공격(종류 미정), 아이템 먹고 커지기 ,아이템 먹고 체력회복하기 ,건물 안으로 들어가기
 
@@ -33,7 +33,7 @@ TCP/IP 소켓 통신을 이용해 실시간 대전 격투 기반의 게임을 �
 6. 업데이트 된 정보를 TCP 프로토콜으로 각 클라이언트에 실시간으로 전송(TCP).
 
 ## 게임 서버 구조와 데이터 흐름
-<img align="center" src="/images/server.png" width="600" height="550">
+<img align="center" src="battleField/images/server.png" width="600" height="550">
 
 
 ## 실행 방법
@@ -42,9 +42,9 @@ TCP/IP 소켓 통신을 이용해 실시간 대전 격투 기반의 게임을 �
 
 1. [git clone](https://github.com/jangseongwoo/TCP-IP-BattleField.git) 을 하세요.
 
-2. 프로젝트 폴더 내  TCP-IP-BattleField/C++, OpenGL, TCP, WinAPI로 한 프로젝트/서버/서버.exe 를 실행시켜주세요.
+2. 프로젝트 폴더 내  TCP-IP-BattleField/battleField/서버/서버.exe 를 실행시켜주세요.
 
-3. 프로젝트 폴더 내 TCP-IP-BattleField/C++, OpenGL, TCP, WinAPI로 한 프로젝트/클라/클라.exe 를 실행시켜주세요.
+3. 프로젝트 폴더 내 TCP-IP-BattleField/battleField/클라/클라.exe 를 실행시켜주세요.
 
 ```sh
 npm install my-crazy-module --save
