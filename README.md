@@ -10,6 +10,11 @@ TCP/IP 소켓 통신을 이용해 실시간 대전 격투 기반의 게임을 �
 
 <img align="center" src="battleField/images/play.png" width="500" height="281">
 
+## 프로젝트 설명
+
+실시간 대전 격투 기반의 게임을 네트워크 기능을 추가 시킨 프로젝트입니다. 제일 먼저 low-level 디자인과 high-level 디자인을 문서화 해놓고 시작했습니다. 기존의 게임의 클래스와 아키텍쳐를 이해하고 클라이언트와 서버의 high-level 디자인을 했습니다. <br>
+기획은 멀티 쓰레드로 포지션, 스테이지, 모션, HP 별로 할당해 독립적으로 동기화를 진행하려 했지만 그렇게 되면 컴퓨터 자원낭비가 심해 적 정보를 묶은 하나의 쓰레드와 플레이어 정보 쓰레드를 만들어 통신하게 했습니다.<br>
+위 그림에서 설명한 방식처럼 각 클라이언트는 서버에 접속해서 TCP프로토콜로 멀티쓰레드를 이용해 다중 접속을 합니다. 그리고 쓰레드는 접속한 클라이언트의 정보를 받고 나머지 클라이언트에 대한 정보를 보냅니다. 쓰레드는 업데이트 된 정보를 정해진 주기에 따라 나머지 클라이언트에게 보내줌으로써 동기화를 합니다.
 
 ## 게임 설명
 
@@ -32,7 +37,8 @@ TCP/IP 소켓 통신을 이용해 실시간 대전 격투 기반의 게임을 �
 5. 서버에서 각 클라이언트의 x ,y 위치 관리(TCP)
 6. 업데이트 된 정보를 TCP 프로토콜으로 각 클라이언트에 실시간으로 전송(TCP).
 
-## 게임 서버 구조와 데이터 흐름
+## 게임 클라이언트/서버 구조와 데이터 흐름
+<img align="center" src="battleField/images/client.png" width="800" height="550">
 <img align="center" src="battleField/images/server.png" width="800" height="550">
 
 
@@ -40,35 +46,13 @@ TCP/IP 소켓 통신을 이용해 실시간 대전 격투 기반의 게임을 �
 
 
 1. [git clone](https://github.com/jangseongwoo/TCP-IP-BattleField.git) 을 하세요.
+```sh
+git clone https://github.com/jangseongwoo/TCP-IP-BattleField.git
+```
 
 2. 프로젝트 폴더 내  TCP-IP-BattleField/battleField/서버/서버.exe 를 실행시켜주세요.
 
 3. 프로젝트 폴더 내 TCP-IP-BattleField/battleField/클라/클라.exe 를 실행시켜주세요.
-
-```sh
-npm install my-crazy-module --save
-```
-
-
-
-```sh
-edit autoexec.bat
-```
-
-## 사용 예제
-
-스크린 샷과 코드 예제를 통해 사용 방법을 자세히 설명합니다.
-
-_더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._
-
-## 개발 환경 설정
-
-모든 개발 의존성 설치 방법과 자동 테스트 슈트 실행 방법을 운영체제 별로 작성합니다.
-
-```sh
-make install
-npm test
-```
 
 ## 개발 환경
 
