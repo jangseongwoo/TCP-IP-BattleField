@@ -1,10 +1,9 @@
 # TCP-IP-BattleField
 
-> TCP/IP 소켓 통신을 이용해 실시간 대전 격투 기반의 게임을 네트워크 기능을 추가 시킨 프로젝트입니다
+> TCP/IP 소켓 통신을 이용해 실시간 대전 격투 기반의 게임을 네트워크 기능을 추가 시킨 프로젝트입니다.
 
 [![GitHub license](https://img.shields.io/github/license/Day8/re-frame.svg)](license.txt)
 
-TCP/IP 소켓 통신을 이용해 실시간 대전 격투 기반의 게임을 네트워크 기능을 추가 시킨 프로젝트입니다
 
 <img align="center" src="battleField/images/play.png" width="500" height="281">
 
