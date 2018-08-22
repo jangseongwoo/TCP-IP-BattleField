@@ -8,7 +8,7 @@
 
 TCP/IP 소켓 통신을 이용해 실시간 대전 격투 기반의 게임을 네트워크 기능을 추가 시킨 프로젝트입니다
 
-![](../header.png)
+<img align="center" src="battleField/images/play.png" width="500" height="281">
 
 
 ## 게임 설명
@@ -33,12 +33,11 @@ TCP/IP 소켓 통신을 이용해 실시간 대전 격투 기반의 게임을 �
 6. 업데이트 된 정보를 TCP 프로토콜으로 각 클라이언트에 실시간으로 전송(TCP).
 
 ## 게임 서버 구조와 데이터 흐름
-<img align="center" src="battleField/images/server.png" width="600" height="550">
+<img align="center" src="battleField/images/server.png" width="800" height="550">
 
 
 ## 실행 방법
 
-윈도우:
 
 1. [git clone](https://github.com/jangseongwoo/TCP-IP-BattleField.git) 을 하세요.
 
@@ -77,6 +76,8 @@ npm test
 - 개발 툴 : Visual Studio 2013 , OpenGL, Window API 라이브러리 사용.
 
 ## 정보
+
+프로젝트에 대한 더 자세한 정보를 원하신다면,  battleField 폴더 내에 있는 프로젝트 최종 보고서.hwp를 참조해주세요.
 
 장성우 – [@facebook](https://www.facebook.com/profile.php?id=100007028118707&ref=bookmarks) – seongwoo.dev@gmail.com
 
